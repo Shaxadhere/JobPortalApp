@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1079135E15AF04D4409150AB /* Pods_JobPortalApp_JobPortalAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0600CCA5409C4BE534E180 /* Pods_JobPortalApp_JobPortalAppUITests.framework */; };
 		30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BDB24A251E3524005008C2 /* SignupViewController.swift */; };
+		30D05EC0252478F1006CCC11 /* EmployerRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */; };
 		30FC2AA2251D4F7D009D5CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC2AA1251D4F7D009D5CB1 /* AppDelegate.swift */; };
 		30FC2AA4251D4F7D009D5CB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC2AA3251D4F7D009D5CB1 /* SceneDelegate.swift */; };
 		30FC2AA6251D4F7D009D5CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC2AA5251D4F7D009D5CB1 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 		30FC2AC4251D4F80009D5CB1 /* JobPortalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC2AC3251D4F80009D5CB1 /* JobPortalAppUITests.swift */; };
 		30FC2AD2251D5D91009D5CB1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC2AD1251D5D91009D5CB1 /* LoginViewController.swift */; };
 		C00F18208375D4CE48206C27 /* Pods_JobPortalAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FC3A03AFEC8F30FE1DAFBD /* Pods_JobPortalAppTests.framework */; };
+		FEE3BC634DE6C11FB0B270CC /* Pods_JobPortalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD23691C07C59BA5BD4D309 /* Pods_JobPortalApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 		165C4EEB50E228206B415939 /* Pods-JobPortalApp-JobPortalAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobPortalApp-JobPortalAppUITests.release.xcconfig"; path = "Target Support Files/Pods-JobPortalApp-JobPortalAppUITests/Pods-JobPortalApp-JobPortalAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1F0600CCA5409C4BE534E180 /* Pods_JobPortalApp_JobPortalAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobPortalApp_JobPortalAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BDB24A251E3524005008C2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerRegViewController.swift; sourceTree = "<group>"; };
 		30FC2A9E251D4F7D009D5CB1 /* JobPortalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobPortalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FC2AA1251D4F7D009D5CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30FC2AA3251D4F7D009D5CB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE3BC634DE6C11FB0B270CC /* Pods_JobPortalApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +140,7 @@
 				30FC2AA5251D4F7D009D5CB1 /* ViewController.swift */,
 				30FC2AD1251D5D91009D5CB1 /* LoginViewController.swift */,
 				30FC2AA7251D4F7D009D5CB1 /* Main.storyboard */,
+				30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */,
 				30BDB24A251E3524005008C2 /* SignupViewController.swift */,
 				30FC2AAA251D4F7F009D5CB1 /* Assets.xcassets */,
 				30FC2AAC251D4F7F009D5CB1 /* LaunchScreen.storyboard */,
@@ -183,6 +188,7 @@
 				30FC2A9A251D4F7D009D5CB1 /* Sources */,
 				30FC2A9B251D4F7D009D5CB1 /* Frameworks */,
 				30FC2A9C251D4F7D009D5CB1 /* Resources */,
+				F9E4F285AFD908AACDF128FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +226,7 @@
 				30FC2ABB251D4F7F009D5CB1 /* Sources */,
 				30FC2ABC251D4F7F009D5CB1 /* Frameworks */,
 				30FC2ABD251D4F7F009D5CB1 /* Resources */,
+				9AE2DBA53D897E59487D7913 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,6 +331,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9AE2DBA53D897E59487D7913 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobPortalApp-JobPortalAppUITests/Pods-JobPortalApp-JobPortalAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobPortalApp-JobPortalAppUITests/Pods-JobPortalApp-JobPortalAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobPortalApp-JobPortalAppUITests/Pods-JobPortalApp-JobPortalAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ECCA34EAF83C5A11AE2C6EE6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,6 +392,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F9E4F285AFD908AACDF128FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobPortalApp/Pods-JobPortalApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobPortalApp/Pods-JobPortalApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobPortalApp/Pods-JobPortalApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -377,6 +418,7 @@
 			files = (
 				30FC2AD2251D5D91009D5CB1 /* LoginViewController.swift in Sources */,
 				30FC2AA6251D4F7D009D5CB1 /* ViewController.swift in Sources */,
+				30D05EC0252478F1006CCC11 /* EmployerRegViewController.swift in Sources */,
 				30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */,
 				30FC2AA2251D4F7D009D5CB1 /* AppDelegate.swift in Sources */,
 				30FC2AA4251D4F7D009D5CB1 /* SceneDelegate.swift in Sources */,

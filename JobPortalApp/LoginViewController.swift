@@ -34,4 +34,9 @@ class LoginViewController: UIViewController {
         present(mainVC, animated: true, completion: nil)
     }
     
+    @IBAction func btnSwitchToEmp(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(identifier: "empreg")
+        present(mainVC, animated: true, completion: nil)
+    }
 }

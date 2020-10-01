@@ -188,6 +188,7 @@
                                 <state key="normal" title="Switch to Employer"/>
                                 <connections>
                                     <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="YvU-uB-ery"/>
+                                    <action selector="btnSwitchToEmp:" destination="ZKm-xb-P14" eventType="touchUpInside" id="hDV-ZP-Szl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -235,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="705.79710144927537" y="90.401785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Employer Reg View Controller-->
         <scene sceneID="uSU-QL-bSF">
             <objects>
-                <viewController id="Oqx-Qo-rsb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="empreg" id="Oqx-Qo-rsb" customClass="EmployerRegViewController" customModule="JobPortalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yhg-Gq-2Bg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -318,11 +319,14 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSignup:" destination="Oqx-Qo-rsb" eventType="touchUpInside" id="XCL-Jp-SL8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4J-ff-0n6">
                                 <rect key="frame" x="127" y="825" width="160" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Switch to Employer"/>
+                                <state key="normal" title="Switch to Worker"/>
                                 <connections>
                                     <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="5fE-c5-zMU"/>
                                 </connections>
@@ -371,6 +375,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hhq-Yv-XuY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnPicture" destination="hve-FW-wDI" id="lSH-QI-aHj"/>
+                        <outlet property="tfAddress" destination="Hab-d4-Z76" id="btd-ve-R7Y"/>
+                        <outlet property="tfEmail" destination="xWq-Cg-MUv" id="aA7-KS-SUN"/>
+                        <outlet property="tfMobile" destination="VAN-Nh-27U" id="C8U-2M-TNA"/>
+                        <outlet property="tfName" destination="Z1E-9K-f0Q" id="jiC-JD-3ij"/>
+                        <outlet property="tfPassword" destination="6gA-I5-LTG" id="bDr-UP-Lyw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeD-ag-bAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -516,11 +528,13 @@
                                                 <state key="normal" title="Switch to Employer"/>
                                                 <connections>
                                                     <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="Skg-Cy-b1M"/>
+                                                    <action selector="btnSwitchToEmp:" destination="sps-js-NNg" eventType="touchUpInside" id="NRk-UW-Gaa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="TlF-MV-uyO" firstAttribute="leading" secondItem="92P-4k-20O" secondAttribute="trailing" constant="-251" id="2Ml-i4-BT2"/>
                                             <constraint firstAttribute="height" constant="1200" id="2SE-Zh-P55"/>
                                             <constraint firstItem="PF6-LZ-YZr" firstAttribute="top" secondItem="Z1C-8o-7W5" secondAttribute="bottom" constant="30" id="5EF-mn-sDc"/>
                                             <constraint firstItem="o6K-Zk-KDp" firstAttribute="leading" secondItem="Fxp-Eh-tph" secondAttribute="leading" constant="30" id="5Fc-iV-G9e"/>
@@ -608,7 +622,7 @@
         <!--View Controller-->
         <scene sceneID="hu8-BE-YW9">
             <objects>
-                <viewController id="1Ih-15-2Yf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="emplogin" id="1Ih-15-2Yf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eDP-JN-Z1C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
