@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1079135E15AF04D4409150AB /* Pods_JobPortalApp_JobPortalAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0600CCA5409C4BE534E180 /* Pods_JobPortalApp_JobPortalAppUITests.framework */; };
+		304CC30E252897B6002594BE /* EmpDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CC30D252897B6002594BE /* EmpDashboardViewController.swift */; };
 		30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BDB24A251E3524005008C2 /* SignupViewController.swift */; };
 		30D05EC0252478F1006CCC11 /* EmployerRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */; };
 		30FC2AA2251D4F7D009D5CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FC2AA1251D4F7D009D5CB1 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		165C4EEB50E228206B415939 /* Pods-JobPortalApp-JobPortalAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobPortalApp-JobPortalAppUITests.release.xcconfig"; path = "Target Support Files/Pods-JobPortalApp-JobPortalAppUITests/Pods-JobPortalApp-JobPortalAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1F0600CCA5409C4BE534E180 /* Pods_JobPortalApp_JobPortalAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobPortalApp_JobPortalAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		304CC30D252897B6002594BE /* EmpDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDashboardViewController.swift; sourceTree = "<group>"; };
 		30BDB24A251E3524005008C2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerRegViewController.swift; sourceTree = "<group>"; };
 		30FC2A9E251D4F7D009D5CB1 /* JobPortalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobPortalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 				30FC2AAA251D4F7F009D5CB1 /* Assets.xcassets */,
 				30FC2AAC251D4F7F009D5CB1 /* LaunchScreen.storyboard */,
 				30FC2AAF251D4F7F009D5CB1 /* Info.plist */,
+				304CC30D252897B6002594BE /* EmpDashboardViewController.swift */,
 			);
 			path = JobPortalApp;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */,
 				30FC2AA2251D4F7D009D5CB1 /* AppDelegate.swift in Sources */,
 				30FC2AA4251D4F7D009D5CB1 /* SceneDelegate.swift in Sources */,
+				304CC30E252897B6002594BE /* EmpDashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
