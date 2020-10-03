@@ -164,7 +164,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnLogin:" destination="ZKm-xb-P14" eventType="touchUpInside" id="Zpe-oI-235"/>
+                                    <action selector="btnLogin:" destination="ZKm-xb-P14" eventType="touchUpInside" id="qgk-Iy-aTx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OD-0a-HDO">
@@ -178,7 +178,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
-                                    <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="HId-wI-DXp"/>
+                                    <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="KKm-3V-WA2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-cR-LwB">
@@ -186,8 +186,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Switch to Employer"/>
                                 <connections>
-                                    <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="YvU-uB-ery"/>
-                                    <action selector="btnSwitchToEmp:" destination="ZKm-xb-P14" eventType="touchUpInside" id="hDV-ZP-Szl"/>
+                                    <action selector="btnSwitchToEmp:" destination="ZKm-xb-P14" eventType="touchUpInside" id="sho-eB-47Z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -618,10 +617,10 @@
             </objects>
             <point key="canvasLocation" x="1468" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Emp Dashboard View Controller-->
         <scene sceneID="Rs0-hN-K2C">
             <objects>
-                <viewController id="RU7-VN-T5M" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="empdash" id="RU7-VN-T5M" customClass="EmpDashboardViewController" customModule="JobPortalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Pv-Lr-Tgj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -648,10 +647,10 @@
             </objects>
             <point key="canvasLocation" x="-43.478260869565219" y="794.86607142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Emp Login View Controller-->
         <scene sceneID="hu8-BE-YW9">
             <objects>
-                <viewController storyboardIdentifier="emplogin" id="1Ih-15-2Yf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="emplogin" id="1Ih-15-2Yf" customClass="EmpLoginViewController" customModule="JobPortalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eDP-JN-Z1C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -706,7 +705,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnLogin:" destination="ZKm-xb-P14" eventType="touchUpInside" id="sWc-m6-sHX"/>
+                                    <action selector="btnEmpSign:" destination="1Ih-15-2Yf" eventType="touchUpInside" id="HXF-EV-64g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhc-IX-VtP">
@@ -714,7 +713,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Switch to Worker"/>
                                 <connections>
-                                    <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="qpo-BJ-uoh"/>
+                                    <action selector="btnSwitchToWorker:" destination="1Ih-15-2Yf" eventType="touchUpInside" id="MUO-GU-0aI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc4-3G-1es">
@@ -723,12 +722,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-Of-FwI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-Of-FwI">
                                 <rect key="frame" x="276" y="831" width="58" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
-                                    <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="zTF-uq-dlw"/>
+                                    <action selector="btnEmpSignup:" destination="1Ih-15-2Yf" eventType="touchUpInside" id="jyc-L0-WpT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -748,6 +747,7 @@
                             <constraint firstItem="Dp9-F6-x5r" firstAttribute="trailing" secondItem="xhc-IX-VtP" secondAttribute="trailing" constant="133" id="Ikp-G2-VRa"/>
                             <constraint firstItem="a8z-Zf-N1f" firstAttribute="leading" secondItem="Dp9-F6-x5r" secondAttribute="leading" id="QMV-AD-7np"/>
                             <constraint firstItem="39l-w7-fn6" firstAttribute="leading" secondItem="Dp9-F6-x5r" secondAttribute="leading" constant="163" id="RcL-Ll-pSl"/>
+                            <constraint firstItem="fjh-Of-FwI" firstAttribute="leading" secondItem="cc4-3G-1es" secondAttribute="trailing" constant="9" id="TuY-Z9-Jpy"/>
                             <constraint firstItem="P2v-NW-hrO" firstAttribute="leading" secondItem="Dp9-F6-x5r" secondAttribute="leading" constant="40" id="VFH-4F-w7R"/>
                             <constraint firstItem="XCy-6e-Fkq" firstAttribute="leading" secondItem="Dp9-F6-x5r" secondAttribute="leading" constant="113" id="a2D-qf-5OB"/>
                             <constraint firstItem="Dp9-F6-x5r" firstAttribute="trailing" secondItem="39l-w7-fn6" secondAttribute="trailing" constant="163" id="a7V-eq-Pwn"/>
