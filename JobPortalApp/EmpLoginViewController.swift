@@ -18,8 +18,9 @@ class EmpLoginViewController: UIViewController {
     
     @IBAction func btnEmpSign(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextView = storyboard.instantiateViewController(identifier: "empdash")
-        present(nextView, animated: true)
+        let nextView = storyboard.instantiateViewController(identifier: "empdash") as! EmpDashboardViewController
+        self.present(nextView, animated: true, completion: nil)
+        
     }
     
     

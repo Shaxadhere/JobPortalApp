@@ -34,14 +34,15 @@ class EmployerRegViewController: UIViewController {
         let Mobile = tfMobile.text!
         let Address = tfAddress.text!
         
-        let url = "http://shaxad.com/projects/JobPortalAPI/controller/employer/register.php?fullname=\(Name)&&email=\(Email)&&password=\(Password)&&mobile=\(Mobile)&&address=\(Address)"
+        let url = "http://shaxad.com/apis/controller/employer/register.php?fullname=\(Name)&&email=\(Email)&&password=\(Password)&&mobile=\(Mobile)&&address=\(Address)"
 
         AF.request(url,method: .get,parameters: [:], encoding: URLEncoding.default).responseJSON { (response) in
             switch(response.result)
             {
                 case .success(let value):
                     print(value)
-                
+                    let response = value as! NSDictionary
+                    let errors = response.object(forKey: "errors")!
                 
                 case .failure(let error):
                     print(error.localizedDescription)
@@ -49,22 +50,5 @@ class EmployerRegViewController: UIViewController {
         }
     }
     
-    
-    func stringify(json: Any, prettyPrinted: Bool = false) -> String {
-        var options: JSONSerialization.WritingOptions = []
-        if prettyPrinted {
-            options = JSONSerialization.WritingOptions.prettyPrinted
-        }
-
-        do {
-          let data = try JSONSerialization.data(withJSONObject: json, options: options)
-          if let string = String(data: data, encoding: String.Encoding.utf8) {
-              return string
-          }
-        } catch {
-              print(error)
-        }
-        return ""
-    }
 
 }
