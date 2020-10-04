@@ -41,8 +41,6 @@ class EmployerRegViewController: UIViewController {
             {
                 case .success(let value):
                     print(value)
-                    let response = value as! NSDictionary
-                    let errors = response.object(forKey: "errors")!
                 
                 case .failure(let error):
                     print(error.localizedDescription)
