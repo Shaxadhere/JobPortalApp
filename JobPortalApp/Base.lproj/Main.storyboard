@@ -620,19 +620,24 @@
         <!--Emp Dashboard View Controller-->
         <scene sceneID="Rs0-hN-K2C">
             <objects>
-                <viewController storyboardIdentifier="empdash" id="RU7-VN-T5M" customClass="EmpDashboardViewController" customModule="JobPortalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="empdash" wantsFullScreenLayout="YES" id="RU7-VN-T5M" customClass="EmpDashboardViewController" customModule="JobPortalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Pv-Lr-Tgj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-SY-YG2">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem systemItem="favorites" id="Fu2-yJ-ttH"/>
+                                    <tabBarItem title="Item" image="house" catalog="system" id="iie-BX-gVh"/>
                                     <tabBarItem systemItem="more" id="yMJ-xp-3sZ"/>
                                 </items>
                             </tabBar>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Way-AW-3WE">
+                                <rect key="frame" x="27" y="596" width="287" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -775,6 +780,7 @@
         <image name="art1" width="500" height="500"/>
         <image name="art2" width="825" height="274"/>
         <image name="art3" width="2370" height="928"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <image name="icloud.and.arrow.up" catalog="system" width="128" height="106"/>
     </resources>
 </document>
