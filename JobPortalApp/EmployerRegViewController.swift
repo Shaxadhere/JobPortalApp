@@ -14,6 +14,7 @@ class EmployerRegViewController: UIViewController {
     
     
     
+    @IBOutlet weak var tfMessage: UILabel!
     @IBOutlet weak var tfName: UITextField!
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
@@ -41,6 +42,16 @@ class EmployerRegViewController: UIViewController {
             {
                 case .success(let value):
                     print(value)
+                let data = value as! Dictionary<String, Any>
+                let success = data["success"] as! String
+                    if success == "true" {
+                        self.tfMessage.textColor = UIColor.green
+                        self.tfMessage.text = "Your account was registered successfuly"
+                    }
+                    else{
+                        let info : NSArray =  data["error"] as! NSArray
+                        self.tfMessage.text = info[0] as? String
+                    }
                 
                 case .failure(let error):
                     print(error.localizedDescription)

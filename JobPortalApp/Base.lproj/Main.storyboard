@@ -289,27 +289,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hve-FW-wDI">
-                                <rect key="frame" x="30" y="666" width="144" height="20"/>
+                                <rect key="frame" x="30" y="641" width="144" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <state key="normal" title="  Picture (Optional)" image="icloud.and.arrow.up" catalog="system">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload your profile picture or you organization's logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4g-Uc-Xw9">
-                                <rect key="frame" x="30" y="695" width="279" height="14"/>
+                                <rect key="frame" x="30" y="670" width="279" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art3" translatesAutoresizingMaskIntoConstraints="NO" id="NjQ-cK-Qwb">
-                                <rect key="frame" x="0.0" y="731" width="414" height="87"/>
+                                <rect key="frame" x="0.0" y="749" width="414" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="cw2-DK-MmI"/>
                                     <constraint firstAttribute="height" constant="87" id="xYO-57-8pG"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IW-7o-KDK">
-                                <rect key="frame" x="163" y="753" width="88" height="36"/>
+                                <rect key="frame" x="163" y="770" width="88" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="jGr-y8-7G9"/>
                                     <constraint firstAttribute="height" constant="36" id="oS0-l7-PMW"/>
@@ -322,16 +322,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4J-ff-0n6">
-                                <rect key="frame" x="127" y="825" width="160" height="33"/>
+                                <rect key="frame" x="127" y="842" width="160" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Switch to Worker"/>
                                 <connections>
                                     <action selector="btnSignup:" destination="ZKm-xb-P14" eventType="touchUpInside" id="5fE-c5-zMU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email is required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwy-xo-g6s">
+                                <rect key="frame" x="30" y="709" width="354" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Pwy-xo-g6s" firstAttribute="top" secondItem="c4g-Uc-Xw9" secondAttribute="bottom" constant="25" id="04o-Tf-PVB"/>
                             <constraint firstItem="6gA-I5-LTG" firstAttribute="top" secondItem="xWq-Cg-MUv" secondAttribute="bottom" constant="30" id="0PI-8j-oJ1"/>
                             <constraint firstItem="Hhq-Yv-XuY" firstAttribute="trailing" secondItem="6gA-I5-LTG" secondAttribute="trailing" constant="30" id="3kv-fe-e0u"/>
                             <constraint firstItem="3DI-n0-II1" firstAttribute="top" secondItem="R6c-xC-cUj" secondAttribute="bottom" constant="8" id="4xY-59-ksx"/>
@@ -351,10 +358,10 @@
                             <constraint firstItem="xWq-Cg-MUv" firstAttribute="leading" secondItem="Hhq-Yv-XuY" secondAttribute="leading" constant="30" id="LwK-sq-GYT"/>
                             <constraint firstItem="c4g-Uc-Xw9" firstAttribute="leading" secondItem="Hhq-Yv-XuY" secondAttribute="leading" constant="30" id="OKB-R5-cmV"/>
                             <constraint firstItem="Hhq-Yv-XuY" firstAttribute="trailing" secondItem="c4g-Uc-Xw9" secondAttribute="trailing" constant="105" id="OgS-mw-xT4"/>
-                            <constraint firstItem="hve-FW-wDI" firstAttribute="top" secondItem="Hab-d4-Z76" secondAttribute="bottom" constant="55" id="P33-Eh-YG6"/>
+                            <constraint firstItem="hve-FW-wDI" firstAttribute="top" secondItem="Hab-d4-Z76" secondAttribute="bottom" constant="30" id="P33-Eh-YG6"/>
                             <constraint firstItem="Hhq-Yv-XuY" firstAttribute="trailing" secondItem="Q4p-Z4-5r1" secondAttribute="trailing" constant="127" id="QI7-7E-JPN"/>
                             <constraint firstItem="NjQ-cK-Qwb" firstAttribute="leading" secondItem="Hhq-Yv-XuY" secondAttribute="leading" id="WfN-3s-5Da"/>
-                            <constraint firstItem="NjQ-cK-Qwb" firstAttribute="top" secondItem="c4g-Uc-Xw9" secondAttribute="bottom" constant="22" id="YwV-3P-ggO"/>
+                            <constraint firstItem="NjQ-cK-Qwb" firstAttribute="top" secondItem="c4g-Uc-Xw9" secondAttribute="bottom" constant="65" id="YwV-3P-ggO"/>
                             <constraint firstItem="c4g-Uc-Xw9" firstAttribute="top" secondItem="hve-FW-wDI" secondAttribute="bottom" constant="9" id="b3w-jZ-m7U"/>
                             <constraint firstItem="j4J-ff-0n6" firstAttribute="leading" secondItem="Hhq-Yv-XuY" secondAttribute="leading" constant="127" id="bC4-zi-yiK"/>
                             <constraint firstItem="Hhq-Yv-XuY" firstAttribute="trailing" secondItem="Z1E-9K-f0Q" secondAttribute="trailing" constant="30" id="c38-dV-t6k"/>
@@ -367,9 +374,11 @@
                             <constraint firstItem="Hhq-Yv-XuY" firstAttribute="trailing" secondItem="4IW-7o-KDK" secondAttribute="trailing" constant="163" id="oQL-mb-vPs"/>
                             <constraint firstItem="hve-FW-wDI" firstAttribute="leading" secondItem="Hhq-Yv-XuY" secondAttribute="leading" constant="30" id="pYa-jL-0pe"/>
                             <constraint firstItem="4IW-7o-KDK" firstAttribute="leading" secondItem="Hhq-Yv-XuY" secondAttribute="leading" constant="163" id="rJM-QV-DZU"/>
+                            <constraint firstItem="Hhq-Yv-XuY" firstAttribute="trailing" secondItem="Pwy-xo-g6s" secondAttribute="trailing" constant="30" id="sGk-Qc-FKF"/>
                             <constraint firstItem="xWq-Cg-MUv" firstAttribute="top" secondItem="Z1E-9K-f0Q" secondAttribute="bottom" constant="30" id="sLC-aC-hVN"/>
                             <constraint firstItem="Hhq-Yv-XuY" firstAttribute="trailing" secondItem="j4J-ff-0n6" secondAttribute="trailing" constant="127" id="sem-sf-Hud"/>
-                            <constraint firstItem="4IW-7o-KDK" firstAttribute="top" secondItem="c4g-Uc-Xw9" secondAttribute="bottom" constant="44" id="y8n-NM-EIl"/>
+                            <constraint firstItem="Pwy-xo-g6s" firstAttribute="leading" secondItem="Hhq-Yv-XuY" secondAttribute="leading" constant="30" id="vDh-Pb-6Al"/>
+                            <constraint firstItem="4IW-7o-KDK" firstAttribute="top" secondItem="c4g-Uc-Xw9" secondAttribute="bottom" constant="86" id="y8n-NM-EIl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hhq-Yv-XuY"/>
                     </view>
@@ -377,6 +386,7 @@
                         <outlet property="btnPicture" destination="hve-FW-wDI" id="lSH-QI-aHj"/>
                         <outlet property="tfAddress" destination="Hab-d4-Z76" id="btd-ve-R7Y"/>
                         <outlet property="tfEmail" destination="xWq-Cg-MUv" id="aA7-KS-SUN"/>
+                        <outlet property="tfMessage" destination="Pwy-xo-g6s" id="Fe3-Lc-muT"/>
                         <outlet property="tfMobile" destination="VAN-Nh-27U" id="C8U-2M-TNA"/>
                         <outlet property="tfName" destination="Z1E-9K-f0Q" id="jiC-JD-3ij"/>
                         <outlet property="tfPassword" destination="6gA-I5-LTG" id="bDr-UP-Lyw"/>
@@ -384,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeD-ag-bAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1436" y="795"/>
+            <point key="canvasLocation" x="1434.7826086956522" y="794.86607142857144"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="TJ9-fx-dF4">
@@ -626,23 +636,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-SY-YG2">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="Fu2-yJ-ttH"/>
-                                    <tabBarItem title="Item" image="house" catalog="system" id="iie-BX-gVh"/>
-                                    <tabBarItem systemItem="more" id="yMJ-xp-3sZ"/>
+                                    <tabBarItem title="Notifications" image="bell.fill" catalog="system" id="Fu2-yJ-ttH"/>
+                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="iie-BX-gVh"/>
+                                    <tabBarItem title="Profile" image="person.fill" catalog="system" id="yMJ-xp-3sZ"/>
                                 </items>
                             </tabBar>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Way-AW-3WE">
-                                <rect key="frame" x="27" y="596" width="287" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xBL-SY-YG2" firstAttribute="leading" secondItem="yb8-J4-Uw5" secondAttribute="leading" id="Ea0-gi-7Ux"/>
+                            <constraint firstItem="xBL-SY-YG2" firstAttribute="bottom" secondItem="yb8-J4-Uw5" secondAttribute="bottom" id="FOc-yV-Ll6"/>
+                            <constraint firstItem="xBL-SY-YG2" firstAttribute="leading" secondItem="yb8-J4-Uw5" secondAttribute="leading" id="Hse-LG-kC3"/>
                             <constraint firstItem="xBL-SY-YG2" firstAttribute="bottom" secondItem="yb8-J4-Uw5" secondAttribute="bottom" id="Nrf-sV-6Bk"/>
+                            <constraint firstItem="xBL-SY-YG2" firstAttribute="trailing" secondItem="yb8-J4-Uw5" secondAttribute="trailing" id="ZDw-ex-FOP"/>
                             <constraint firstItem="xBL-SY-YG2" firstAttribute="trailing" secondItem="yb8-J4-Uw5" secondAttribute="trailing" id="jzr-hL-kuQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yb8-J4-Uw5"/>
@@ -775,12 +784,29 @@
             </objects>
             <point key="canvasLocation" x="704" y="795"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="DLB-42-xX9">
+            <objects>
+                <viewController id="XcJ-pc-rnl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VpG-Vb-SOb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lmn-ib-J2n"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d47-Ug-uQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2212" y="90"/>
+        </scene>
     </scenes>
     <resources>
         <image name="art1" width="500" height="500"/>
         <image name="art2" width="825" height="274"/>
         <image name="art3" width="2370" height="928"/>
-        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="bell.fill" catalog="system" width="128" height="124"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="icloud.and.arrow.up" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
     </resources>
 </document>

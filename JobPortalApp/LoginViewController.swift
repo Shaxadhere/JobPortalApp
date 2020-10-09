@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
 
@@ -22,10 +23,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func btnLogin(_ sender: Any) {
-        if let email = tfEmail.text{
-            print(email)
-        }
-//        print(tfEmail.text)
+        AF.request("")
     }
     
     @IBAction func btnSignup(_ sender: Any) {
