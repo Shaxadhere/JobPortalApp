@@ -11,6 +11,7 @@ import Alamofire
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var tfMessage: UILabel!
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
     
@@ -23,7 +24,31 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func btnLogin(_ sender: Any) {
-        AF.request("")
+        let email = self.tfEmail.text!
+        let password = self.tfPassword.text!
+        
+        let url = "http://shaxad.com/apis/controller/worker/login.php?email=\(email)&password=\(password)"
+        
+        
+        AF.request(url, method: .get, parameters: [:], encoding: URLEncoding.default).responseJSON { (response) in
+            switch(response.result)
+            {
+            case .success(let value):
+                print(value)
+                let data = value as! Dictionary<String, Any>
+                let success = data["success"] as! String
+                if success == "true" {
+                    print("login")
+                }
+                else{
+                    let info : NSArray = data["error"] as! NSArray
+                    self.tfMessage.text = info[0] as? String
+                }
+            
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     @IBAction func btnSignup(_ sender: Any) {
