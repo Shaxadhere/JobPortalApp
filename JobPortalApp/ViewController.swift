@@ -14,18 +14,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
     
-    @IBAction func btnSignup(_ sender: Any) {
+    
+    @IBAction func btnEmployer(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(identifier: "signupVC")
+        let mainVC = storyboard.instantiateViewController(identifier: "emplogin")
         present(mainVC, animated: true, completion: nil)
     }
     
-    @IBAction func btnLogin(_ sender: Any) {
+    
+    @IBAction func btnWorker(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainVC = storyboard.instantiateViewController(identifier: "loginVC")
         present(mainVC, animated: true, completion: nil)
     }
+    
 }
 
