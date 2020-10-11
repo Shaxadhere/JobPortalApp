@@ -36,7 +36,6 @@ class WorkerProfileViewController: UIViewController {
                         
                         
                     }
-                    print(value)
                 
                 case .failure(let error):
                     print(error)
