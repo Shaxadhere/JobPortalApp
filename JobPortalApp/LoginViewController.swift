@@ -38,7 +38,16 @@ class LoginViewController: UIViewController {
                 let data = value as! Dictionary<String, Any>
                 let success = data["success"] as! String
                 if success == "true" {
-                    print("login")
+                    let user = data["result"] as! Dictionary<String, Any>
+                    let ID = user["PK_ID"] as! String
+                    let defaults = UserDefaults.standard
+                    defaults.set(ID, forKey: "ID")
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let mainVC = storyboard.instantiateViewController(identifier: "workerdash")
+                    mainVC.modalPresentationStyle = .fullScreen
+                    self.present(mainVC, animated: true, completion: nil)
+                    
                 }
                 else{
                     let info : NSArray = data["error"] as! NSArray

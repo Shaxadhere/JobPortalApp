@@ -26,8 +26,6 @@ class EmpLoginViewController: UIViewController {
         let email = tfEmail.text!
         let password = tfPassword.text!
         
-        print(password)
-        
         let url = "http://shaxad.com/apis/controller/employer/login.php?email=\(email)&password=\(password)"
         
         AF.request(url, method: .get, parameters: [:], encoding: URLEncoding.default).responseJSON { (response) in
@@ -36,7 +34,18 @@ class EmpLoginViewController: UIViewController {
                 let data = value as! Dictionary<String, Any>
                 let success = data["success"] as! String
                 if success == "true" {
-                    print("login")
+                    
+                    let user = data["result"] as! Dictionary<String, Any>
+                    let ID = user["PK_ID"] as! String
+                    
+                    let defaults = UserDefaults.standard
+                    defaults.set(ID, forKey: "ID")
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let mainVC = storyboard.instantiateViewController(identifier: "empdash")
+                    mainVC.modalPresentationStyle = .fullScreen
+                    self.present(mainVC, animated: true, completion: nil)
+                    
                 }
                 else{
                     let error : NSArray = data["error"] as! NSArray
