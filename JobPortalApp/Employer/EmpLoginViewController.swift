@@ -1,74 +1,70 @@
 //
-//  LoginViewController.swift
+//  EmpLoginViewController.swift
 //  JobPortalApp
 //
-//  Created by Shehzad on 25/09/2020.
+//  Created by Shehzad on 03/10/2020.
 //  Copyright © 2020 Shehzad. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 
-class LoginViewController: UIViewController {
+class EmpLoginViewController: UIViewController {
 
-    @IBOutlet weak var tfMessage: UILabel!
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
-    
+    @IBOutlet weak var lblMessage: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-    
-    @IBAction func btnLogin(_ sender: Any) {
-        let email = self.tfEmail.text!
-        let password = self.tfPassword.text!
+    @IBAction func btnEmpSign(_ sender: Any) {
         
-        let url = "http://shaxad.com/apis/controller/worker/login.php?email=\(email)&password=\(password)"
+        let email = tfEmail.text!
+        let password = tfPassword.text!
         
+        let url = "http://shaxad.com/apis/controller/employer/login.php?email=\(email)&password=\(password)"
         
         AF.request(url, method: .get, parameters: [:], encoding: URLEncoding.default).responseJSON { (response) in
-            switch(response.result)
-            {
+            switch(response.result){
             case .success(let value):
-                print(value)
                 let data = value as! Dictionary<String, Any>
                 let success = data["success"] as! String
                 if success == "true" {
+                    
                     let user = data["result"] as! Dictionary<String, Any>
                     let ID = user["PK_ID"] as! String
+                    
                     let defaults = UserDefaults.standard
                     defaults.set(ID, forKey: "ID")
                     
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let mainVC = storyboard.instantiateViewController(identifier: "workerdash")
+                    let mainVC = storyboard.instantiateViewController(identifier: "empdash")
                     mainVC.modalPresentationStyle = .fullScreen
                     self.present(mainVC, animated: true, completion: nil)
                     
                 }
                 else{
-                    let info : NSArray = data["error"] as! NSArray
-                    self.tfMessage.text = info[0] as? String
+                    let error : NSArray = data["error"] as! NSArray
+                    self.lblMessage.text = error[0] as? String
                 }
-            
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
+        
     }
     
-    @IBAction func btnSignup(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(identifier: "signupVC")
-        present(mainVC, animated: true, completion: nil)
-    }
     
-    @IBAction func btnSwitchToEmp(_ sender: Any) {
+    
+    @IBAction func btnEmpSignup(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(identifier: "emplogin")
+        let mainVC = storyboard.instantiateViewController(identifier: "empreg")
         present(mainVC, animated: true, completion: nil)
     }
 }
+

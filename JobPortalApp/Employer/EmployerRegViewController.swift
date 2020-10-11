@@ -47,6 +47,17 @@ class EmployerRegViewController: UIViewController {
                     if success == "true" {
                         self.tfMessage.textColor = UIColor.green
                         self.tfMessage.text = "Your account was registered successfuly"
+                        let result = data["result"] as! Dictionary<String, Any>
+                        let ID = result["PK_ID"] as! String
+                        
+                        let defaults = UserDefaults.standard
+                        defaults.set(ID, forKey: "ID")
+                        
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let mainVC = storyboard.instantiateViewController(identifier: "empdash")
+                        mainVC.modalPresentationStyle = .fullScreen
+                        self.present(mainVC, animated: true, completion: nil)
+                        
                     }
                     else{
                         let info : NSArray =  data["error"] as! NSArray

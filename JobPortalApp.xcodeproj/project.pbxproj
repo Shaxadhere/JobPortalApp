@@ -11,6 +11,8 @@
 		304CC30E252897B6002594BE /* EmpDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CC30D252897B6002594BE /* EmpDashboardViewController.swift */; };
 		304CC31025289998002594BE /* EmpLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CC30F25289998002594BE /* EmpLoginViewController.swift */; };
 		30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BDB24A251E3524005008C2 /* SignupViewController.swift */; };
+		30CA5F2925332AD100B46B9F /* WorkerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA5F2825332AD100B46B9F /* WorkerProfileViewController.swift */; };
+		30CA5F2B25332AEF00B46B9F /* WorkerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CA5F2A25332AEF00B46B9F /* WorkerHomeViewController.swift */; };
 		30D05EC0252478F1006CCC11 /* EmployerRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */; };
 		30DBCE58252A051900D57519 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DBCE57252A051900D57519 /* Functions.swift */; };
 		30F151512530D4DA00400BA7 /* WorkerDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F151502530D4DA00400BA7 /* WorkerDashViewController.swift */; };
@@ -50,6 +52,8 @@
 		304CC30D252897B6002594BE /* EmpDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDashboardViewController.swift; sourceTree = "<group>"; };
 		304CC30F25289998002594BE /* EmpLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpLoginViewController.swift; sourceTree = "<group>"; };
 		30BDB24A251E3524005008C2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		30CA5F2825332AD100B46B9F /* WorkerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerProfileViewController.swift; sourceTree = "<group>"; };
+		30CA5F2A25332AEF00B46B9F /* WorkerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkerHomeViewController.swift; path = /Users/shehzad/Documents/XCodeProjects/JobPortalApp/JobPortalApp/WorkerHomeViewController.swift; sourceTree = "<absolute>"; };
 		30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerRegViewController.swift; sourceTree = "<group>"; };
 		30DBCE57252A051900D57519 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		30F151502530D4DA00400BA7 /* WorkerDashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerDashViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		30CA5F2C25332B1200B46B9F /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				30BDB24A251E3524005008C2 /* SignupViewController.swift */,
+				30FC2AD1251D5D91009D5CB1 /* LoginViewController.swift */,
+				30F151502530D4DA00400BA7 /* WorkerDashViewController.swift */,
+				30CA5F2825332AD100B46B9F /* WorkerProfileViewController.swift */,
+				30CA5F2A25332AEF00B46B9F /* WorkerHomeViewController.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		30CA5F2D25332B2000B46B9F /* Employer */ = {
+			isa = PBXGroup;
+			children = (
+				30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */,
+				304CC30F25289998002594BE /* EmpLoginViewController.swift */,
+				304CC30D252897B6002594BE /* EmpDashboardViewController.swift */,
+			);
+			path = Employer;
+			sourceTree = "<group>";
+		};
+		30CA5F2E25332B2800B46B9F /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
 		30FC2A95251D4F7D009D5CB1 = {
 			isa = PBXGroup;
 			children = (
@@ -143,15 +176,12 @@
 		30FC2AA0251D4F7D009D5CB1 /* JobPortalApp */ = {
 			isa = PBXGroup;
 			children = (
+				30CA5F2E25332B2800B46B9F /* Admin */,
+				30CA5F2D25332B2000B46B9F /* Employer */,
+				30CA5F2C25332B1200B46B9F /* Worker */,
 				30FC2AA1251D4F7D009D5CB1 /* AppDelegate.swift */,
 				30FC2AA3251D4F7D009D5CB1 /* SceneDelegate.swift */,
 				30FC2AA5251D4F7D009D5CB1 /* ViewController.swift */,
-				30BDB24A251E3524005008C2 /* SignupViewController.swift */,
-				30FC2AD1251D5D91009D5CB1 /* LoginViewController.swift */,
-				30F151502530D4DA00400BA7 /* WorkerDashViewController.swift */,
-				30D05EBF252478F1006CCC11 /* EmployerRegViewController.swift */,
-				304CC30F25289998002594BE /* EmpLoginViewController.swift */,
-				304CC30D252897B6002594BE /* EmpDashboardViewController.swift */,
 				30FC2AA7251D4F7D009D5CB1 /* Main.storyboard */,
 				30FC2AAA251D4F7F009D5CB1 /* Assets.xcassets */,
 				30FC2AAC251D4F7F009D5CB1 /* LaunchScreen.storyboard */,
@@ -434,10 +464,12 @@
 				30DBCE58252A051900D57519 /* Functions.swift in Sources */,
 				30FC2AA6251D4F7D009D5CB1 /* ViewController.swift in Sources */,
 				30D05EC0252478F1006CCC11 /* EmployerRegViewController.swift in Sources */,
+				30CA5F2925332AD100B46B9F /* WorkerProfileViewController.swift in Sources */,
 				30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */,
 				30FC2AA2251D4F7D009D5CB1 /* AppDelegate.swift in Sources */,
 				30FC2AA4251D4F7D009D5CB1 /* SceneDelegate.swift in Sources */,
 				304CC30E252897B6002594BE /* EmpDashboardViewController.swift in Sources */,
+				30CA5F2B25332AEF00B46B9F /* WorkerHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

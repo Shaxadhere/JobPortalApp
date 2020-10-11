@@ -609,7 +609,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBL-SY-YG2">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Notifications" image="bell.fill" catalog="system" id="Fu2-yJ-ttH"/>
@@ -762,7 +762,7 @@
         <!--Profile-->
         <scene sceneID="K9m-X0-a1N">
             <objects>
-                <viewController id="7sr-Q0-Jg2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="workerprofile" id="7sr-Q0-Jg2" customClass="WorkerProfileViewController" customModule="JobPortalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7VX-bF-pnb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -914,7 +914,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPL-dr-Cr8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989.85507246376824" y="334.82142857142856"/>
+            <point key="canvasLocation" x="1996" y="-29"/>
         </scene>
         <!--Home-->
         <scene sceneID="UO7-SR-fAe">
@@ -992,7 +992,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLF-p7-8j3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989.85507246376824" y="-361.60714285714283"/>
+            <point key="canvasLocation" x="393" y="-757"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xd9-WX-xiw">
@@ -1117,7 +1117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pcf-xT-AuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1795.6521739130437" y="60.9375"/>
+            <point key="canvasLocation" x="1174" y="-461"/>
         </scene>
     </scenes>
     <resources>
