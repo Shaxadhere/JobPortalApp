@@ -10,7 +10,11 @@ import UIKit
 import Alamofire
 
 class WorkerProfileViewController: UIViewController {
+    
 
+    @IBOutlet weak var lblFullName: UILabel!
+    @IBOutlet weak var lblEmail: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = UserDefaults.standard
@@ -26,7 +30,11 @@ class WorkerProfileViewController: UIViewController {
                     let success = data["success"] as! String
                     
                     if success == "true" {
-                        <#code#>
+                        let result = data["result"] as! Dictionary<String, Any>
+                        self.lblFullName.text = result["FullName"] as? String
+                        self.lblEmail.text = result["Email"] as? String
+                        
+                        
                     }
                     print(value)
                 
