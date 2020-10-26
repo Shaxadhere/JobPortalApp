@@ -156,7 +156,6 @@
 			children = (
 				30FC2AA1251D4F7D009D5CB1 /* AppDelegate.swift */,
 				30FC2AA3251D4F7D009D5CB1 /* SceneDelegate.swift */,
-				30FC2AAF251D4F7F009D5CB1 /* Info.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -253,6 +252,7 @@
 				3036802C253D6B3F00AFAD81 /* Views */,
 				3036802D253D6B5300AFAD81 /* Functions */,
 				30FC2AAA251D4F7F009D5CB1 /* Assets.xcassets */,
+				30FC2AAF251D4F7F009D5CB1 /* Info.plist */,
 			);
 			path = JobPortalApp;
 			sourceTree = "<group>";
