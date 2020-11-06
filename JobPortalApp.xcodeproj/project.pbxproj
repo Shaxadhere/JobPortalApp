@@ -10,6 +10,8 @@
 		1079135E15AF04D4409150AB /* Pods_JobPortalApp_JobPortalAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0600CCA5409C4BE534E180 /* Pods_JobPortalApp_JobPortalAppUITests.framework */; };
 		304CC30E252897B6002594BE /* EmpDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CC30D252897B6002594BE /* EmpDashboardViewController.swift */; };
 		304CC31025289998002594BE /* EmpLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304CC30F25289998002594BE /* EmpLoginViewController.swift */; };
+		308A8E5A25554EA8003D323A /* EmployerProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308A8E5925554EA8003D323A /* EmployerProfileTableViewCell.swift */; };
+		308A8E5C25555526003D323A /* MyJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308A8E5B25555526003D323A /* MyJobsViewController.swift */; };
 		30AB15D725340F8A00D92B4F /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB15D625340F8A00D92B4F /* NotificationTableViewCell.swift */; };
 		30AB15DA2534102100D92B4F /* WorkerNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB15D92534102100D92B4F /* WorkerNotificationViewController.swift */; };
 		30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BDB24A251E3524005008C2 /* SignupViewController.swift */; };
@@ -57,6 +59,8 @@
 		1F0600CCA5409C4BE534E180 /* Pods_JobPortalApp_JobPortalAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobPortalApp_JobPortalAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		304CC30D252897B6002594BE /* EmpDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpDashboardViewController.swift; sourceTree = "<group>"; };
 		304CC30F25289998002594BE /* EmpLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpLoginViewController.swift; sourceTree = "<group>"; };
+		308A8E5925554EA8003D323A /* EmployerProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerProfileTableViewCell.swift; sourceTree = "<group>"; };
+		308A8E5B25555526003D323A /* MyJobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyJobsViewController.swift; path = Elements/MyJobsViewController.swift; sourceTree = "<group>"; };
 		30AB15D625340F8A00D92B4F /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		30AB15D92534102100D92B4F /* WorkerNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerNotificationViewController.swift; sourceTree = "<group>"; };
 		30BDB24A251E3524005008C2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				30F28A1825348F4C0040172E /* EmployerProfileViewController.swift */,
 				30F28A1A25348F660040172E /* EmployerNotificationViewController.swift */,
 				30F28A1C25348F720040172E /* EmployerHomeViewController.swift */,
+				308A8E5B25555526003D323A /* MyJobsViewController.swift */,
 			);
 			path = Employer;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				30F28A1625348F1A0040172E /* WorkerProfileTableViewCell.swift */,
+				308A8E5925554EA8003D323A /* EmployerProfileTableViewCell.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -532,8 +538,10 @@
 				304CC31025289998002594BE /* EmpLoginViewController.swift in Sources */,
 				30DBCE58252A051900D57519 /* Functions.swift in Sources */,
 				30FC2AA6251D4F7D009D5CB1 /* ViewController.swift in Sources */,
+				308A8E5C25555526003D323A /* MyJobsViewController.swift in Sources */,
 				30D05EC0252478F1006CCC11 /* EmployerRegViewController.swift in Sources */,
 				30CA5F2925332AD100B46B9F /* WorkerProfileViewController.swift in Sources */,
+				308A8E5A25554EA8003D323A /* EmployerProfileTableViewCell.swift in Sources */,
 				30BDB24B251E3524005008C2 /* SignupViewController.swift in Sources */,
 				30AB15DA2534102100D92B4F /* WorkerNotificationViewController.swift in Sources */,
 				30FC2AA2251D4F7D009D5CB1 /* AppDelegate.swift in Sources */,

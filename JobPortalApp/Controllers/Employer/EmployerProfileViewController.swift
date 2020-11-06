@@ -8,13 +8,52 @@
 
 import UIKit
 
-class EmployerProfileViewController: UIViewController {
-
+class EmployerProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tvProfileMain: UITableView!
+    
+    let mainProfile = ["Personal Info", "My Jobs"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tvProfileMain.delegate = self
+        tvProfileMain.dataSource = self
 
-        // Do any additional setup after loading the view.
+        
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.mainProfile.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "empprofilecell") as! EmployerProfileTableViewCell
+        cell.lblTitle.text = mainProfile[indexPath.row]
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        switch indexPath.row {
+            
+        case 0:
+            print("profile")
+        case 1:
+            let vc = storyboard.instantiateViewController(identifier: "myjobsvc")
+            present(vc, animated: true, completion: nil)
+            print("jobs")
+        default:
+            print("nothing")
+            
+        }
+        
+    }
+    
     
 
 }
